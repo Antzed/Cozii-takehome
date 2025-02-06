@@ -19,4 +19,3 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
-// mars-applications?retryWrites=true&w=majority

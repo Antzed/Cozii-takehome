@@ -12,7 +12,7 @@ export default function HealthSafety({ formData, setFormData, prevStep }) {
     setFormData(prev => ({ ...prev, ...data }));
     // Submit to backend
     try {
-      await axios.post(`${API_URL}/api/applications`, formData);
+      await axios.post(`/api/applications`, formData);
       alert('Application submitted successfully!');
     } catch (error) {
       console.error('Submission failed:', error);
