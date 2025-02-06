@@ -4,8 +4,9 @@
     "private": true,
     "scripts": {
       "client": "cd frontend && npm install && npm run build",
-      "server": "cd mars-visit-api && npm install && npm start",
-      "start": "npm run client && npm run server",
+      "server": "cd mars-visit-api && npm install",
+      "build": "npm run client && npm run server",
+      "start": "npm start",
       "dev:client": "cd frontend && npm start",
       "dev:server": "cd mars-visit-api && npm run dev",
       "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
